@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link href="project.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="arena">
+
+    <!-- Player 1 -->
+    <div class="box-1">
+      <h1>SUPERMAN</h1>
+      <img src="superman.jpg" width="200" height="250">
+      <button class="btn-atk" onclick="game.pl1AttackPl2()">Attack</button>
+      <button class="btn-heal" onclick="game.pl1Heal()">Heal</button>
+      <p class="pl1"></p>
+      <p class="pl1-wins"></p>
+    </div>
+
+    <!-- VS + Reset -->
+    <div class="box-2">
+      <img src="vs.jpg" width="100" height="150">
+      <button class="btn-reset" onclick="game.reset()">Reset</button>
+    </div>
+
+    <!-- Player 2 -->
+    <div class="box-1">
+      <h1>DARKSEID</h1>
+      <img src="darkseid.jpg" width="200" height="250">
+      <button class="btn-atk" onclick="game.pl2AttackPl1()">Attack</button>
+      <button class="btn-heal" onclick="game.pl2Heal()">Heal</button>
+      <p class="pl2"></p>
+      <p class="pl2-wins"></p>
+    </div>
+
+  </div>
+
+  <script src="project.js" defer></script>
+</body>
+</html>
